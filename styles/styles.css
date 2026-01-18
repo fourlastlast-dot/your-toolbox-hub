@@ -12,3 +12,25 @@
 #infi-chatgpt-mediaGalleryPremiumOnlyModal a[href*="ai-toolbox.co/pricing"],
 a.infi-chatgpt-pricingLink{display:none!important}
 
+/* Info & Updates: keep Guides only */
+#infi-chatgpt-infoAndUpdatesModal #tab-announcements,
+#infi-chatgpt-infoAndUpdatesModal #tab-release-notes,
+#infi-chatgpt-infoAndUpdatesModal #tab-affiliate,
+#infi-chatgpt-infoAndUpdatesModal #tab-upgrade,
+#infi-chatgpt-infoAndUpdatesModal #tab-known-bugs,
+#infi-chatgpt-infoAndUpdatesModal #tab-hotkeys{display:none!important}
+
+#infi-chatgpt-infoAndUpdatesModal #panel-announcements,
+#infi-chatgpt-infoAndUpdatesModal #panel-release-notes,
+#infi-chatgpt-infoAndUpdatesModal #panel-affiliate,
+#infi-chatgpt-infoAndUpdatesModal #panel-upgrade,
+#infi-chatgpt-infoAndUpdatesModal #panel-known-bugs,
+#infi-chatgpt-infoAndUpdatesModal #panel-hotkeys{display:none!important}
+
+/* Force Guides panel visible even if the template marks it as hidden */
+#infi-chatgpt-infoAndUpdatesModal #panel-guides[hidden]{
+  display:block!important;
+}
+
+/* Remove footer links (review/reddit/upgrade CTA) */
+#infi-chatgpt-infoAndUpdatesModal #infoAndUpdates__footer{display:none!important}
