@@ -1,0 +1,40 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "assets/images/icon128.png",
+         "16": "assets/images/icon16.png",
+         "24": "assets/images/icon24.png",
+         "32": "assets/images/icon32.png",
+         "48": "assets/images/icon48.png"
+      },
+      "default_title": "ChatGPT Toolbox"
+   },
+   "background": {
+      "service_worker": "scripts/background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "styles/styles.css", "styles/modal.css", "styles/snackbar.css", "styles/loader.css", "styles/form.css", "styles/variables.css", "styles/switch.css", "styles/prompts.css", "styles/pinnedChats.css", "styles/gptsCollapse.css", "styles/moveChat.css", "styles/searchHistory.css", "styles/paidUserBadge.css", "styles/voiceDownload.css", "styles/mediaGallery.css", "styles/direction.css", "styles/featuresCollapse.css", "styles/addGPTs.css", "styles/promptLibrary.css", "styles/promptValues.css", "styles/chainValues.css", "styles/dnd.css", "styles/infoAndUpdates.css", "styles/bookmarkMessage.css", "styles/freeUser.css", "styles/collapseMessage.css" ],
+      "js": [ "scripts/content.js" ],
+      "matches": [ "https://chatgpt.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "The Ultimate ChatGPT Experience! Save Prompts, Export, Pin, Subfolders, Bookmarks, RTL, Prompt Library, Download as MP3 & more!",
+   "host_permissions": [ "https://chatgpt.com/*", "https://api.infi-dev.com/ai-toolbox/*" ],
+   "icons": {
+      "128": "assets/images/icon128.png",
+      "16": "assets/images/icon16.png",
+      "24": "assets/images/icon24.png",
+      "32": "assets/images/icon32.png",
+      "48": "assets/images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkRn9GkYiIATGlfwjUiB31iGxNiHg50mk93A/qHmHH2g6WUXccDhChbQ+ga1bBG+KAyu/z1dWP3fjoIHUbQUeb6OhrL25tInCFrwXN0ZHuZd8mPDDQFoHC0vNzl468DH3+7PqnyeuqjRvEyWXrFxvvg76QjpDFG6oG4Ny0uC0Iz45IZhAmHLygUdvLopkCaUmABsdAfijVm5P3yqext9NbhKkGsU4GLMmyVsafa8owvbIgjFo4ZRJ79tmIAx5Zfn2GHxPwmqURFOKeVgq75yIdwjYM+2Zc5Y+BKNM58q4rCKEK4C0FLeFfz8m1FuDRleW/CPCzEZ7z9BIuBRwJJ3cvQIDAQAB",
+   "manifest_version": 3,
+   "name": "ChatGPT Toolbox",
+   "permissions": [ "storage", "webRequest", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.0.12",
+   "web_accessible_resources": [ {
+      "matches": [ "https://chatgpt.com/*" ],
+      "resources": [ "assets/sounds/alert.mp3" ]
+   } ]
+}

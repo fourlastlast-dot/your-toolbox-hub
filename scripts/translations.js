@@ -1,0 +1,1 @@
+(()=>{"use strict";(()=>{let t={};function e(t){const e={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"};return t.replace(/[&<>"']/g,(t=>e[t]))}})()})();
