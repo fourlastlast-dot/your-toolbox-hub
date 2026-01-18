@@ -2,3 +2,13 @@
 
 /* Hide plan row in sidebar */
 #paid-user-badge{display:none!important}
+
+/* Remove all upgrade/pricing CTAs (hide links only; keep feature logic intact) */
+#infi-chatgpt-infoAndUpdatesModal a[href*="ai-toolbox.co/pricing"],
+#infi-chatgpt-freeUserFeedbackModal a[href*="ai-toolbox.co/pricing"],
+#infi-chatgpt-freeUserSuccessModal a[href*="ai-toolbox.co/pricing"],
+#infi-chatgpt-premiumRequiredModal a[href*="ai-toolbox.co/pricing"],
+#infi-chatgpt-premiumLimitModal a[href*="ai-toolbox.co/pricing"],
+#infi-chatgpt-mediaGalleryPremiumOnlyModal a[href*="ai-toolbox.co/pricing"],
+a.infi-chatgpt-pricingLink{display:none!important}
+
